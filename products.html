@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products | Aaranya Global Exports</title>
+    <meta name="description"
+        content="Browse our catalog of premium organic Indian spices, natural foods, and herbal wellness products available for global export.">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .product-filters {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 40px;
+            flex-wrap: wrap;
+        }
+
+        .filter-btn {
+            border: 1px solid var(--text-light);
+            background: transparent;
+            color: var(--text-dark);
+            padding: 8px 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+
+        .filter-btn.active,
+        .filter-btn:hover {
+            background: var(--primary-green);
+            color: white;
+            border-color: var(--primary-green);
+        }
+
+        .product-card {
+            background: white;
+            border: 1px solid #eee;
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            transition: var(--transition);
+        }
+
+        .product-card:hover {
+            box-shadow: var(--shadow-lg);
+            transform: translateY(-5px);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .product-info {
+            padding: 20px;
+        }
+
+        .product-info h3 {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+        }
+
+        .product-tag {
+            font-size: 0.8rem;
+            color: var(--accent-gold);
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <i class="fa-solid fa-leaf"></i> Aaranya <span>Global</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html" class="active">Products</a>
+                <a href="certifications.html">Quality</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="global-presence.html">Global Markets</a>
+                <a href="contact.html">Contact</a>
+                <a href="contact.html" class="btn btn-accent" style="padding: 6px 12px; color: white; font-size: 0.85rem; border-radius: 4px;">Get Quote</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header"
+        style="background-image: linear-gradient(rgba(10, 58, 42, 0.9), rgba(10, 58, 42, 0.9)), url('assets/images/hero_bg.jpg');">
+        <div class="container reveal">
+            <h1>Premium Product Catalog</h1>
+            <p>100% Organic, Authentic, and Handpicked for Global Markets.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container reveal">
+
+            
+            <div class="product-filters">
+                <button class="filter-btn active" data-filter="all">All Portfolio</button>
+                <button class="filter-btn" data-filter="spices">Spices</button>
+                <button class="filter-btn" data-filter="dehydrated">Onion & Dehydrated</button>
+                <button class="filter-btn" data-filter="coconut">Coconut Products</button>
+                <button class="filter-btn" data-filter="fruits">Fruits</button>
+                <button class="filter-btn" data-filter="grains">Grains & Staples</button>
+                <button class="filter-btn" data-filter="processed">Processed Food</button>
+                <button class="filter-btn" data-filter="marine">Marine</button>
+                <button class="filter-btn" data-filter="textiles">Textiles</button>
+                <button class="filter-btn" data-filter="industrial">Industrial/Others</button>
+            </div>
+
+            <div class="category-grid" id="productGrid">
+
+                <!-- Premium Cavendish Banana -->
+                <div class="product-card" data-category="fruits">
+                    <img src="assets/images/banana.jpg" alt="Premium Cavendish Banana" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Premium+Cavendish+Banana'">
+                    <div class="product-info">
+                        <span class="product-tag">Fruits</span>
+                        <h3>Premium Cavendish Banana</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High-grade Cavendish bananas, export-quality ripening and packaging.</p>
+                        <a href="contact.html?product=PremiumCavendishBanana" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Alphonso & Banganapalli Mango -->
+                <div class="product-card" data-category="fruits">
+                    <img src="assets/images/mango.jpg" alt="Alphonso & Banganapalli Mango" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Alphonso+&+Banganapalli+Mango'">
+                    <div class="product-info">
+                        <span class="product-tag">Fruits</span>
+                        <h3>Alphonso & Banganapalli Mango</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">The king of mangoes. Available as fresh fruit and pulp.</p>
+                        <a href="contact.html?product=Alphonso&BanganapalliMango" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Fresh Pomegranate -->
+                <div class="product-card" data-category="fruits">
+                    <img src="assets/images/pomegranate.jpg" alt="Fresh Pomegranate" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Fresh+Pomegranate'">
+                    <div class="product-info">
+                        <span class="product-tag">Fruits</span>
+                        <h3>Fresh Pomegranate</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Deep red pearls, rich in antioxidants. Sourced from Karnataka's best orchards.</p>
+                        <a href="contact.html?product=FreshPomegranate" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Table Grapes -->
+                <div class="product-card" data-category="fruits">
+                    <img src="assets/images/grapes.jpg" alt="Table Grapes" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Table+Grapes'">
+                    <div class="product-info">
+                        <span class="product-tag">Fruits</span>
+                        <h3>Table Grapes</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Seedless Thompson and black varieties. Firm, sweet, and export-ready.</p>
+                        <a href="contact.html?product=TableGrapes" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Solo Papaya -->
+                <div class="product-card" data-category="fruits">
+                    <img src="assets/images/papaya.jpg" alt="Solo Papaya" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Solo+Papaya'">
+                    <div class="product-info">
+                        <span class="product-tag">Fruits</span>
+                        <h3>Solo Papaya</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Fresh, sweet papaya with uniform size and perfect ripeness for transit.</p>
+                        <a href="contact.html?product=SoloPapaya" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Fresh Green & Brown Coconut -->
+                <div class="product-card" data-category="coconut">
+                    <img src="assets/images/coconut_fresh.jpg" alt="Fresh Green & Brown Coconut" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Fresh+Green+&+Brown+Coconut'">
+                    <div class="product-info">
+                        <span class="product-tag">Coconut</span>
+                        <h3>Fresh Green & Brown Coconut</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High water content and thick meat. Sourced from coastal belts.</p>
+                        <a href="contact.html?product=FreshGreen&BrownCoconut" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Dry Coconut (Copra) -->
+                <div class="product-card" data-category="coconut">
+                    <img src="assets/images/copra.jpg" alt="Dry Coconut (Copra)" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Dry+Coconut+(Copra)'">
+                    <div class="product-info">
+                        <span class="product-tag">Coconut</span>
+                        <h3>Dry Coconut (Copra)</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High oil content, perfectly dried for industrial and culinary use.</p>
+                        <a href="contact.html?product=DryCoconut(Copra)" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cold-Pressed Coconut Oil -->
+                <div class="product-card" data-category="coconut">
+                    <img src="assets/images/coconut_oil.jpg" alt="Cold-Pressed Coconut Oil" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Cold-Pressed+Coconut+Oil'">
+                    <div class="product-info">
+                        <span class="product-tag">Coconut</span>
+                        <h3>Cold-Pressed Coconut Oil</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">100% Pure, virgin coconut oil for food and cosmetic industries.</p>
+                        <a href="contact.html?product=Cold-PressedCoconutOil" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Coconut Milk Powder -->
+                <div class="product-card" data-category="coconut">
+                    <img src="assets/images/coconut_milk_powder.jpg" alt="Coconut Milk Powder" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Coconut+Milk+Powder'">
+                    <div class="product-info">
+                        <span class="product-tag">Coconut</span>
+                        <h3>Coconut Milk Powder</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Instant, high-fat coconut milk powder for gourmet food processing.</p>
+                        <a href="contact.html?product=CoconutMilkPowder" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Desiccated Coconut -->
+                <div class="product-card" data-category="coconut">
+                    <img src="assets/images/desiccated_coconut.jpg" alt="Desiccated Coconut" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Desiccated+Coconut'">
+                    <div class="product-info">
+                        <span class="product-tag">Coconut</span>
+                        <h3>Desiccated Coconut</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Fine and medium grade unsweetened shredded coconut.</p>
+                        <a href="contact.html?product=DesiccatedCoconut" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Coconut Shell Charcoal -->
+                <div class="product-card" data-category="coconut">
+                    <img src="assets/images/coconut_charcoal.jpg" alt="Coconut Shell Charcoal" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Coconut+Shell+Charcoal'">
+                    <div class="product-info">
+                        <span class="product-tag">Coconut</span>
+                        <h3>Coconut Shell Charcoal <span class="status-tag" style="background: var(--accent-gold); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; margin-left: 10px; vertical-align: middle;">HOT EXPORT</span></h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High calorific value, clean-burning charcoal for industrial use.</p>
+                        <a href="contact.html?product=CoconutShellCharcoal" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Coconut Fiber (Coir) -->
+                <div class="product-card" data-category="coconut">
+                    <img src="assets/images/coconut_fiber.jpg" alt="Coconut Fiber (Coir)" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Coconut+Fiber+(Coir)'">
+                    <div class="product-info">
+                        <span class="product-tag">Coconut</span>
+                        <h3>Coconut Fiber (Coir)</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Traditional and high-strength coir fiber for industrial applications.</p>
+                        <a href="contact.html?product=CoconutFiber(Coir)" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Fresh Red & White Onion -->
+                <div class="product-card" data-category="dehydrated">
+                    <img src="assets/images/onion_fresh.jpg" alt="Fresh Red & White Onion" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Fresh+Red+&+White+Onion'">
+                    <div class="product-info">
+                        <span class="product-tag">Dehydrated</span>
+                        <h3>Fresh Red & White Onion</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Pungent, high-solids onions ideal for global kitchens.</p>
+                        <a href="contact.html?product=FreshRed&WhiteOnion" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Onion Powder (Premium) -->
+                <div class="product-card" data-category="dehydrated">
+                    <img src="assets/images/onion_powder.jpg" alt="Onion Powder (Premium)" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Onion+Powder+(Premium)'">
+                    <div class="product-info">
+                        <span class="product-tag">Dehydrated</span>
+                        <h3>Onion Powder (Premium)</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Pure dehydrated onion powder. No additives, long shelf life.</p>
+                        <a href="contact.html?product=OnionPowder(Premium)" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Dehydrated Onion Flakes -->
+                <div class="product-card" data-category="dehydrated">
+                    <img src="assets/images/onion_flakes.jpg" alt="Dehydrated Onion Flakes" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Dehydrated+Onion+Flakes'">
+                    <div class="product-info">
+                        <span class="product-tag">Dehydrated</span>
+                        <h3>Dehydrated Onion Flakes</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Kibbled onion flakes, perfect for food service and processing.</p>
+                        <a href="contact.html?product=DehydratedOnionFlakes" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Golden Fried Onion -->
+                <div class="product-card" data-category="dehydrated">
+                    <img src="assets/images/fried_onion.jpg" alt="Golden Fried Onion" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Golden+Fried+Onion'">
+                    <div class="product-info">
+                        <span class="product-tag">Dehydrated</span>
+                        <h3>Golden Fried Onion</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Crispy, vacuum-fried onions for gourmet garnishing.</p>
+                        <a href="contact.html?product=GoldenFriedOnion" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Dehydrated Garlic Powder -->
+                <div class="product-card" data-category="dehydrated">
+                    <img src="assets/images/garlic_powder.jpg" alt="Dehydrated Garlic Powder" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Dehydrated+Garlic+Powder'">
+                    <div class="product-info">
+                        <span class="product-tag">Dehydrated</span>
+                        <h3>Dehydrated Garlic Powder</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High-pungency garlic powder for seasonings and blends.</p>
+                        <a href="contact.html?product=DehydratedGarlicPowder" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Organic Turmeric Finger -->
+                <div class="product-card" data-category="spices">
+                    <img src="assets/images/turmeric.jpg" alt="Organic Turmeric Finger" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Organic+Turmeric+Finger'">
+                    <div class="product-info">
+                        <span class="product-tag">Spices</span>
+                        <h3>Organic Turmeric Finger <span class="status-tag" style="background: var(--accent-gold); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; margin-left: 10px; vertical-align: middle;">HOT EXPORT</span></h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High-curcumin turmeric roots, polished for export standards.</p>
+                        <a href="contact.html?product=OrganicTurmericFinger" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Whole Red Chilli (S17/Teja) -->
+                <div class="product-card" data-category="spices">
+                    <img src="assets/images/red_chilli.jpg" alt="Whole Red Chilli (S17/Teja)" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Whole+Red+Chilli+(S17/Teja)'">
+                    <div class="product-info">
+                        <span class="product-tag">Spices</span>
+                        <h3>Whole Red Chilli (S17/Teja)</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High heat, vibrant red color. Stemless and graded.</p>
+                        <a href="contact.html?product=WholeRedChilli(S17/Teja)" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Cumin Seeds (Jeera) -->
+                <div class="product-card" data-category="spices">
+                    <img src="assets/images/cumin.jpg" alt="Cumin Seeds (Jeera)" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Cumin+Seeds+(Jeera)'">
+                    <div class="product-info">
+                        <span class="product-tag">Spices</span>
+                        <h3>Cumin Seeds (Jeera)</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Aromatic, machine-cleaned bold cumin seeds.</p>
+                        <a href="contact.html?product=CuminSeeds(Jeera)" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Black Pepper Bold -->
+                <div class="product-card" data-category="spices">
+                    <img src="assets/images/black_pepper.jpg" alt="Black Pepper Bold" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Black+Pepper+Bold'">
+                    <div class="product-info">
+                        <span class="product-tag">Spices</span>
+                        <h3>Black Pepper Bold</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">550gl+ density pepper berries from Malabar regions.</p>
+                        <a href="contact.html?product=BlackPepperBold" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Green Cardamom -->
+                <div class="product-card" data-category="spices">
+                    <img src="assets/images/cardamom.jpg" alt="Green Cardamom" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Green+Cardamom'">
+                    <div class="product-info">
+                        <span class="product-tag">Spices</span>
+                        <h3>Green Cardamom</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">7mm-8mm extra bold green pods, intensely aromatic.</p>
+                        <a href="contact.html?product=GreenCardamom" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Coriander Seeds -->
+                <div class="product-card" data-category="spices">
+                    <img src="assets/images/coriander.jpg" alt="Coriander Seeds" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Coriander+Seeds'">
+                    <div class="product-info">
+                        <span class="product-tag">Spices</span>
+                        <h3>Coriander Seeds</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Eagle and Scooter qualities, split or whole.</p>
+                        <a href="contact.html?product=CorianderSeeds" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Premium Basmati Rice -->
+                <div class="product-card" data-category="grains">
+                    <img src="assets/images/basmati_rice.jpg" alt="Premium Basmati Rice" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Premium+Basmati+Rice'">
+                    <div class="product-info">
+                        <span class="product-tag">Grains & Staples</span>
+                        <h3>Premium Basmati Rice</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Long-grain, aged aromatic rice (1121 / Pusa).</p>
+                        <a href="contact.html?product=PremiumBasmatiRice" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Non-Basmati Rice -->
+                <div class="product-card" data-category="grains">
+                    <img src="assets/images/non_basmati_rice.jpg" alt="Non-Basmati Rice" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Non-Basmati+Rice'">
+                    <div class="product-info">
+                        <span class="product-tag">Grains & Staples</span>
+                        <h3>Non-Basmati Rice</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Sona Masuri, IR64, and parboiled varieties.</p>
+                        <a href="contact.html?product=Non-BasmatiRice" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Milling Wheat -->
+                <div class="product-card" data-category="grains">
+                    <img src="assets/images/wheat.jpg" alt="Milling Wheat" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Milling+Wheat'">
+                    <div class="product-info">
+                        <span class="product-tag">Grains & Staples</span>
+                        <h3>Milling Wheat</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High-protein Sharbati and durum wheat varieties.</p>
+                        <a href="contact.html?product=MillingWheat" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Pulses & Dal -->
+                <div class="product-card" data-category="grains">
+                    <img src="assets/images/pulses.jpg" alt="Pulses & Dal" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Pulses+&+Dal'">
+                    <div class="product-info">
+                        <span class="product-tag">Grains & Staples</span>
+                        <h3>Pulses & Dal</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Chickpeas, Lentils, and Pigeon Peas (Tur Dal).</p>
+                        <a href="contact.html?product=Pulses&Dal" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Ready-to-Eat Meals -->
+                <div class="product-card" data-category="processed">
+                    <img src="assets/images/rte_meals.jpg" alt="Ready-to-Eat Meals" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Ready-to-Eat+Meals'">
+                    <div class="product-info">
+                        <span class="product-tag">Processed</span>
+                        <h3>Ready-to-Eat Meals</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Authentic Indian recipes in shelf-stable retort packaging.</p>
+                        <a href="contact.html?product=Ready-to-EatMeals" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Traditional Pickles -->
+                <div class="product-card" data-category="processed">
+                    <img src="assets/images/pickles.jpg" alt="Traditional Pickles" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Traditional+Pickles'">
+                    <div class="product-info">
+                        <span class="product-tag">Processed</span>
+                        <h3>Traditional Pickles</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Mango, Lime, and Chilli pickles in export-quality jars.</p>
+                        <a href="contact.html?product=TraditionalPickles" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Gourmet Spice Mixes -->
+                <div class="product-card" data-category="processed">
+                    <img src="assets/images/spice_mixes.jpg" alt="Gourmet Spice Mixes" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Gourmet+Spice+Mixes'">
+                    <div class="product-info">
+                        <span class="product-tag">Processed</span>
+                        <h3>Gourmet Spice Mixes</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Blended Masalas for global cuisines (Curry, Garam, Biryani).</p>
+                        <a href="contact.html?product=GourmetSpiceMixes" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Frozen Vegetables -->
+                <div class="product-card" data-category="processed">
+                    <img src="assets/images/frozen_veggies.jpg" alt="Frozen Vegetables" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Frozen+Vegetables'">
+                    <div class="product-info">
+                        <span class="product-tag">Processed</span>
+                        <h3>Frozen Vegetables</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">IQF processed mixed vegetables and sweet corn.</p>
+                        <a href="contact.html?product=FrozenVegetables" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Mango & Banana Pulp -->
+                <div class="product-card" data-category="processed">
+                    <img src="assets/images/fruit_pulp.jpg" alt="Mango & Banana Pulp" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Mango+&+Banana+Pulp'">
+                    <div class="product-info">
+                        <span class="product-tag">Processed</span>
+                        <h3>Mango & Banana Pulp <span class="status-tag" style="background: var(--accent-gold); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; margin-left: 10px; vertical-align: middle;">HOT EXPORT</span></h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Aseptic packaging of pure fruit pulps for industrial use.</p>
+                        <a href="contact.html?product=Mango&BananaPulp" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Assam & Darjeeling Tea -->
+                <div class="product-card" data-category="beverages">
+                    <img src="assets/images/tea.jpg" alt="Assam & Darjeeling Tea" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Assam+&+Darjeeling+Tea'">
+                    <div class="product-info">
+                        <span class="product-tag">Beverages</span>
+                        <h3>Assam & Darjeeling Tea</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Single-estate loose leaf and CTC tea varieties.</p>
+                        <a href="contact.html?product=Assam&DarjeelingTea" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Premium Mysore Coffee -->
+                <div class="product-card" data-category="beverages">
+                    <img src="assets/images/coffee.jpg" alt="Premium Mysore Coffee" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Premium+Mysore+Coffee'">
+                    <div class="product-info">
+                        <span class="product-tag">Beverages</span>
+                        <h3>Premium Mysore Coffee</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Arabica and Robusta beans, roasted or green.</p>
+                        <a href="contact.html?product=PremiumMysoreCoffee" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Frozen Vannamei Shrimp -->
+                <div class="product-card" data-category="marine">
+                    <img src="assets/images/shrimp.jpg" alt="Frozen Vannamei Shrimp" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Frozen+Vannamei+Shrimp'">
+                    <div class="product-info">
+                        <span class="product-tag">Marine</span>
+                        <h3>Frozen Vannamei Shrimp <span class="status-tag" style="background: var(--accent-gold); color: white; padding: 2px 8px; border-radius: 4px; font-size: 0.7rem; margin-left: 10px; vertical-align: middle;">HOT EXPORT</span></h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Head-on and De-veined, export-grade frozen shrimp.</p>
+                        <a href="contact.html?product=FrozenVannameiShrimp" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Fresh-Frozen Fish -->
+                <div class="product-card" data-category="marine">
+                    <img src="assets/images/fish.jpg" alt="Fresh-Frozen Fish" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Fresh-Frozen+Fish'">
+                    <div class="product-info">
+                        <span class="product-tag">Marine</span>
+                        <h3>Fresh-Frozen Fish</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Pomfret, Kingfish, and Mackerel varieties.</p>
+                        <a href="contact.html?product=Fresh-FrozenFish" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Organic Cotton Garments -->
+                <div class="product-card" data-category="textiles">
+                    <img src="assets/images/textiles.jpg" alt="Organic Cotton Garments" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Organic+Cotton+Garments'">
+                    <div class="product-info">
+                        <span class="product-tag">Textiles</span>
+                        <h3>Organic Cotton Garments</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Sustainable cotton T-shirts and basics.</p>
+                        <a href="contact.html?product=OrganicCottonGarments" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Premium Bed Linens -->
+                <div class="product-card" data-category="textiles">
+                    <img src="assets/images/bedsheets.jpg" alt="Premium Bed Linens" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Premium+Bed+Linens'">
+                    <div class="product-info">
+                        <span class="product-tag">Textiles</span>
+                        <h3>Premium Bed Linens</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">High thread-count cotton bedsheets and covers.</p>
+                        <a href="contact.html?product=PremiumBedLinens" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Pharmaceutical Formulations -->
+                <div class="product-card" data-category="industrial">
+                    <img src="assets/images/pharma.jpg" alt="Pharmaceutical Formulations" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Pharmaceutical+Formulations'">
+                    <div class="product-info">
+                        <span class="product-tag">Industrial</span>
+                        <h3>Pharmaceutical Formulations</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Generic formulations and API sourcing.</p>
+                        <a href="contact.html?product=PharmaceuticalFormulations" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Handicrafts & Decor -->
+                <div class="product-card" data-category="others">
+                    <img src="assets/images/handicrafts.jpg" alt="Handicrafts & Decor" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Handicrafts+&+Decor'">
+                    <div class="product-info">
+                        <span class="product-tag">Lifestyle & Others</span>
+                        <h3>Handicrafts & Decor</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Artisan-crafted Indian home decor items.</p>
+                        <a href="contact.html?product=Handicrafts&Decor" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <!-- Ayurvedic Products -->
+                <div class="product-card" data-category="others">
+                    <img src="assets/images/ayurveda.jpg" alt="Ayurvedic Products" onerror="this.src='https://placehold.co/600x400/0a3a2a/c39a58?text=Ayurvedic+Products'">
+                    <div class="product-info">
+                        <span class="product-tag">Lifestyle & Others</span>
+                        <h3>Ayurvedic Products</h3>
+                        <p class="mb-3" style="font-size:0.9rem; color:var(--text-light); margin-bottom:15px;">Natural wellness and herbal healthcare range.</p>
+                        <a href="contact.html?product=AyurvedicProducts" class="accent-text" style="font-size:0.9rem;">Inquire Now <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+<div class="text-center" style="margin-top: 60px;">
+                <p style="margin-bottom: 20px; font-size:1.1rem;">Looking for bulk custom orders or specific products
+                    not listed?</p>
+                <a href="contact.html" class="btn btn-primary">Request Custom Catalog <i
+                        class="fa-solid fa-file-pdf"></i></a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3><i class="fa-solid fa-leaf"></i> Aaranya <span>Global</span></h3>
+                    <p>Positioned as a premium organic export brand, delivering India's finest to the world with
+                        uncompromised quality, integrity, and trust.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/919901228084" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="products.html">Product Catalog</a></li>
+                        
+                        <li><a href="certifications.html">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Request Quote</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="global-presence.html">Global Markets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Mysore, Karnataka, India</p>
+                    <p><i class="fa-solid fa-envelope"></i> kmventures1625@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 99012 28084</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 99014 94344</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aaranya Global Exports. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-sticky-container">
+        <a href="https://wa.me/919901228084" class="whatsapp-sticky" target="_blank" title="WhatsApp Sales 1">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://wa.me/919901494344" class="whatsapp-sticky" target="_blank" title="WhatsApp Sales 2">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <div class="scroll-top"><i class="fa-solid fa-angle-up"></i></div>
+
+    <script src="assets/js/main.js"></script>
+    <script>
+        // Simple JS for filtering products
+        document.addEventListener('DOMContentLoaded', () => {
+            const filterBtns = document.querySelectorAll('.filter-btn');
+            const products = document.querySelectorAll('.product-card');
+
+            filterBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    // Remove active class
+                    filterBtns.forEach(b => b.classList.remove('active'));
+                    // Add active class
+                    btn.classList.add('active');
+
+                    const filter = btn.getAttribute('data-filter');
+
+                    products.forEach(product => {
+                        if (filter === 'all' || product.getAttribute('data-category') === filter) {
+                            product.style.display = 'block';
+                        } else {
+                            product.style.display = 'none';
+                        }
+                    });
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Aaranya Global Exports</title>
+    <meta name="description"
+        content="Partner with Aaranya Global Exports. Request a quote or catalog of our organic export products.">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1.5fr;
+            gap: 60px;
+        }
+
+        .contact-info {
+            background: var(--primary-green);
+            color: white;
+            padding: 40px;
+            border-radius: var(--border-radius-lg);
+        }
+
+        .contact-info h3 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .contact-item {
+            display: flex;
+            gap: 20px;
+            align-items: flex-start;
+            margin-bottom: 30px;
+        }
+
+        .contact-item i {
+            font-size: 24px;
+            color: var(--accent-gold);
+        }
+
+        .form-group {
+            margin-bottom: 24px;
+            text-align: left;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            color: var(--text-dark);
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 14px 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-family: var(--font-body);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-green);
+            box-shadow: 0 0 0 3px rgba(10, 58, 42, 0.1);
+        }
+
+        textarea.form-control {
+            height: 150px;
+            resize: vertical;
+        }
+
+        @media (max-width: 992px) {
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="nav-brand">
+                <i class="fa-solid fa-leaf"></i> Aaranya <span>Global</span>
+            </a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="products.html">Products</a>
+                <a href="certifications.html">Quality</a>
+                <a href="catalog.html">Catalog</a>
+                <a href="global-presence.html">Global Markets</a>
+                <a href="contact.html" class="active">Contact</a>
+                <a href="contact.html" class="btn btn-accent" style="padding: 6px 12px; color: white; font-size: 0.85rem; border-radius: 4px;">Get Quote</a>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <header class="page-header"
+        style="background-image: linear-gradient(rgba(10, 58, 42, 0.9), rgba(10, 58, 42, 0.9)), url('assets/images/hero_bg.jpg');">
+        <div class="container reveal">
+            <h1>Partner With Us</h1>
+            <p>Request quotes, samples, or bulk export inquiries confidently.</p>
+        </div>
+    </header>
+
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+                <div class="contact-info reveal-left shadow">
+                    <h3>Get in Touch</h3>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-location-dot"></i>
+                        <div>
+                            <h4 style="color:white; margin-bottom:5px;">Head Office</h4>
+                            <p style="opacity:0.8; font-size:0.9rem;">Mysore, Karnataka<br>India - 570001</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <div>
+                            <h4 style="color:white; margin-bottom:5px;">Email Us</h4>
+                            <p style="opacity:0.8; font-size:0.9rem;">
+                                export@aaranyaglobal.com<br>kmventures1625@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <h4 style="color:white; margin-bottom:5px;">Call & WhatsApp</h4>
+                            <p style="opacity:0.8; font-size:0.9rem; margin-bottom:5px;">+91 99012 28084</p>
+                            <a href="https://wa.me/919901228084" target="_blank" class="btn"
+                                style="background:#25D366; color:white; padding:8px 16px; margin-bottom: 15px; font-size:0.8rem;">Chat
+                                on WhatsApp <i class="fa-brands fa-whatsapp"
+                                    style="font-size:12px; color:white; margin-left:5px;"></i></a>
+
+                            <p style="opacity:0.8; font-size:0.9rem; margin-bottom:5px;">+91 99014 94344</p>
+                            <a href="https://wa.me/919901494344" target="_blank" class="btn"
+                                style="background:#25D366; color:white; padding:8px 16px; font-size:0.8rem;">Chat on
+                                WhatsApp <i class="fa-brands fa-whatsapp"
+                                    style="font-size:12px; color:white; margin-left:5px;"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form reveal-right"
+                    style="background:white; padding:40px; border-radius:var(--border-radius-lg); box-shadow:var(--shadow-md);">
+                    <h2 style="margin-bottom:30px;">Request a Quote / Inquiry</h2>
+                    <form action="#" method="POST"
+                        onsubmit="event.preventDefault(); alert('Message Sent Successfully!');">
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+                            <div class="form-group">
+                                <label>Your Name *</label>
+                                <input type="text" class="form-control" placeholder="John Doe" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Company Name</label>
+                                <input type="text" class="form-control" placeholder="Acme Imports Ltd.">
+                            </div>
+                        </div>
+                        <div style="display:grid; grid-template-columns: 1fr 1fr; gap:20px;">
+                            <div class="form-group">
+                                <label>Email Address *</label>
+                                <input type="email" class="form-control" placeholder="john@example.com" required>
+                            </div>
+                            <div class="form-group">
+                                <label>Phone / WhatsApp</label>
+                                <input type="tel" class="form-control" placeholder="+44 1234 567890">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Product of Interest *</label>
+                            <select class="form-control" id="productSelect" required>
+                                <option value="" disabled selected>Select a category...</option>
+                                <option value="spices">Organic Spices</option>
+                                <option value="natural_foods">Natural Foods (Rice, Millets)</option>
+                                <option value="wellness">Herbal & Wellness Products</option>
+                                <option value="custom">Custom Bulk Source Request</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Your Message / Requirements</label>
+                            <textarea class="form-control"
+                                placeholder="Please let us know the quantity, target destination, and any specific certifications required..."></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary pulse-btn" style="width:100%;">Send Inquiry <i
+                                class="fa-solid fa-paper-plane" style="margin-left:10px;"></i></button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-about">
+                    <h3><i class="fa-solid fa-leaf"></i> Aaranya <span>Global</span></h3>
+                    <p>Positioned as a premium organic export brand, delivering India's finest to the world with
+                        uncompromised quality, integrity, and trust.</p>
+                    <div class="footer-social">
+                        <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://wa.me/919901228084" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="products.html">Product Catalog</a></li>
+                        
+                        <li><a href="certifications.html">Certifications</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="contact.html">Request Quote</a></li>
+                        <li><a href="#">Shipping Policy</a></li>
+                        <li><a href="global-presence.html">Global Markets</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact Us</h4>
+                    <p><i class="fa-solid fa-location-dot"></i> Mysore, Karnataka, India</p>
+                    <p><i class="fa-solid fa-envelope"></i> kmventures1625@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 99012 28084</p>
+                    <p><i class="fa-solid fa-phone"></i> +91 99014 94344</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Aaranya Global Exports. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="whatsapp-sticky-container">
+        <a href="https://wa.me/919901228084" class="whatsapp-sticky" target="_blank" title="WhatsApp Sales 1">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+        <a href="https://wa.me/919901494344" class="whatsapp-sticky" target="_blank" title="WhatsApp Sales 2">
+            <i class="fa-brands fa-whatsapp"></i>
+        </a>
+    </div>
+    <div class="scroll-top"><i class="fa-solid fa-angle-up"></i></div>
+    <script src="assets/js/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const urlParams = new URLSearchParams(window.location.search);
+            const product = urlParams.get('product');
+            const select = document.getElementById('productSelect');
+            if (product && select) {
+                if (product === 'Turmeric' || product === 'BlackPepper') select.value = 'spices';
+                if (product === 'Millets' || product === 'Jaggery' || product === 'Coconut') select.value = 'natural_foods';
+                if (product === 'Moringa') select.value = 'wellness';
+            }
+        });
+    </script>
+</body>
+
+</html>
